@@ -799,7 +799,7 @@ Moments from Pollamgattu
       <div class="f-brand-name">POLLAMGATTU</div>
       <p>A working farmstay in Chanvelli, Chevella, Telangana. Unplug, unwind, and reconnect with nature.</p>
       <div class="socials">
-        <a href="#" title="Instagram">&#128247;</a>
+        <a href="https://www.instagram.com/pollam.gattu/" target="_blank" title="Instagram">&#128247;</a>
         <a href="#" title="Facebook">f</a>
         <a href="https://wa.me/919177000010" title="WhatsApp">&#128172;</a>
         <a href="#" title="YouTube">&#9654;</a>
@@ -928,5 +928,35 @@ const obs = new IntersectionObserver(entries =>
 );
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
+<a href="https://www.instagram.com/pollam.gattu/" 
+   target="_blank" 
+   class="instagram-float">
+  📸 Instagram
+</a>
+
+<style>
+.instagram-float{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:999;
+  background:#E1306C;
+  color:#fff;
+  padding:12px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-family:'Montserrat',sans-serif;
+  font-size:.8rem;
+  font-weight:600;
+  letter-spacing:.04em;
+  box-shadow:0 6px 20px rgba(0,0,0,.2);
+  transition:transform .2s,opacity .2s;
+}
+
+.instagram-float:hover{
+  transform:translateY(-2px);
+  opacity:.92;
+}
+</style>
 </body>
 </html>
