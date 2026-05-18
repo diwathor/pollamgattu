@@ -539,6 +539,8 @@ footer { background: var(--black); padding: 4rem 6vw 2rem; }
     <li><a href="#booking">Stay</a></li>
     <li><a href="#amenities">Experiences</a></li>
     <li><a href="#gallery">Gallery</a></li>
+    <li><a href="harvest.html">Pollamgattu Harvest</a></li>
+<li><a href="store.html">Buy Now</a></li>
     <li><a href="#location">Location</a></li>
     <li><a href="mailto:nishantakula123@gmail.com">Contact</a></li>
   </ul>
@@ -738,11 +740,10 @@ Moments from Pollamgattu
           </select>
         </div>
       </div>
-      <div class="f-group"><label>Preference</label>
-        <select id="rm">
-           <option value="entire">Entire Farm House)</option>
-        </select>
-      </div>
+      <div class="f-group">
+  <label>Preference</label>
+  <input type="text" value="Entire Farm House" readonly>
+</div>
       <div class="f-group"><label>Full Name</label><input type="text" id="nm" placeholder="Ravi Kumar"></div>
       <div class="f-group"><label>WhatsApp Number</label><input type="tel" id="ph" placeholder="+91 91770 00010"></div>
       <div class="f-group"><label>Email</label><input type="email" id="em" placeholder="you@example.com"></div>
@@ -947,7 +948,8 @@ document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 .instagram-float{
   position:fixed;
   right:20px;
-  bottom:20px;
+  top:50%;
+  transform:translateY(-50%);
   z-index:999;
   background:#E1306C;
   color:#fff;
@@ -959,13 +961,11 @@ document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
   font-weight:600;
   letter-spacing:.04em;
   box-shadow:0 6px 20px rgba(0,0,0,.2);
-  transition:transform .2s,opacity .2s;
+  transition:opacity .2s;
 }
 
 .instagram-float:hover{
-  transform:translateY(-2px);
   opacity:.92;
 }
-</style>
 </body>
 </html>
