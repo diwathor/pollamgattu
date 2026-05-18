@@ -27,10 +27,15 @@ body { font-family: 'Inter', sans-serif; background: var(--cream); color: var(--
 
 /* ── NAVBAR ── */
 .navbar {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
   background: var(--yellow);
   border-bottom: 1.5px solid rgba(0,0,0,.12);
-  display: flex; align-items: center;
+  display: flex;
+  align-items: center;
   padding: 0 2.5rem;
   height: 80px;
   transition: box-shadow .3s;
@@ -584,7 +589,7 @@ footer { background: var(--black); padding: 4rem 6vw 2rem; }
     </div>
   </div>
   <div class="about-image reveal d2">
-    <div class="ph">🌿</div>
+    <img src="/images/hero.jpg" alt="Pollamgattu Farmstay">
   </div>
 </section>
 
@@ -598,16 +603,42 @@ footer { background: var(--black); padding: 4rem 6vw 2rem; }
     <a href="#booking" class="btn-black" style="align-self:center">Book a Stay &rarr;</a>
   </div>
   <div class="gallery-grid reveal d1">
-    <div class="g-item"><div class="gph">🌾</div><div class="g-overlay"><span class="g-tag">Fields</span></div></div>
-    <div class="g-item"><div class="gph">🌻</div><div class="g-overlay"><span class="g-tag">Garden</span></div></div>
-    <div class="g-item"><div class="gph">🌄</div><div class="g-overlay"><span class="g-tag">Sunrise</span></div></div>
-    <div class="g-item"><div class="gph">🏕️</div><div class="g-overlay"><span class="g-tag">Cottage</span></div></div>
-    <div class="g-item"><div class="gph">🍽️</div><div class="g-overlay"><span class="g-tag">Farm Food</span></div></div>
-    <div class="g-item"><div class="gph">🔥</div><div class="g-overlay"><span class="g-tag">Barbeque</span></div></div>
-  </div>
-  <p style="text-align:center;margin-top:1.8rem;font-size:.72rem;color:rgba(0,0,0,.35);font-family:'Montserrat',sans-serif;letter-spacing:.12em;text-transform:uppercase">Replace placeholders with your farm photos</p>
-</section>
 
+  <div class="g-item">
+    <img src="/images/gallery/gallery1.jpg" alt="Pollamgattu Gallery">
+    <div class="g-overlay"><span class="g-tag">Fields</span></div>
+  </div>
+
+  <div class="g-item">
+    <img src="/images/gallery/gallery2.jpg" alt="Pollamgattu Gallery">
+    <div class="g-overlay"><span class="g-tag">Garden</span></div>
+  </div>
+
+  <div class="g-item">
+    <img src="/images/gallery/gallery3.jpg" alt="Pollamgattu Gallery">
+    <div class="g-overlay"><span class="g-tag">Sunrise</span></div>
+  </div>
+
+  <div class="g-item">
+    <img src="/images/gallery/gallery4.jpg" alt="Pollamgattu Gallery">
+    <div class="g-overlay"><span class="g-tag">Cottage</span></div>
+  </div>
+
+  <div class="g-item">
+    <img src="/images/gallery/gallery5.jpg" alt="Pollamgattu Gallery">
+    <div class="g-overlay"><span class="g-tag">Farm Food</span></div>
+  </div>
+
+  <div class="g-item">
+    <img src="/images/gallery/gallery6.jpg" alt="Pollamgattu Gallery">
+    <div class="g-overlay"><span class="g-tag">Barbeque</span></div>
+  </div>
+
+</div>
+
+<p style="text-align:center;margin-top:1.8rem;font-size:.72rem;color:rgba(0,0,0,.35);font-family:'Montserrat',sans-serif;letter-spacing:.12em;text-transform:uppercase">
+Moments from Pollamgattu
+</p>
 <!-- Lightbox -->
 <div class="lb" id="lb" onclick="closeLb()">
   <span class="lb-close">&#10005;</span>
@@ -621,7 +652,13 @@ footer { background: var(--black); padding: 4rem 6vw 2rem; }
     <h2 class="sec-title">Experiences &amp; <em>Amenities</em></h2>
   </div>
   <div class="amenities-grid reveal d1">
-    <div class="amenity-card"><div class="a-icon">🛖</div><div class="a-name">Mud Cottages</div><div class="a-desc">Cool, earthy rooms built with local materials for natural climate control.</div></div>
+    <div class="amenity-card">
+  <div class="a-icon">🏕️</div>
+  <div class="a-name">Thatched Roof Stay</div>
+  <div class="a-desc">
+    Traditional countryside architecture with naturally cool interiors and rustic charm.
+  </div>
+</div>
     <div class="amenity-card"><div class="a-icon">🍳</div><div class="a-name">Farm Kitchen</div><div class="a-desc">Three meals daily cooked on wood fire with produce from our fields.</div></div>
     <div class="amenity-card"><div class="a-icon">🌾</div><div class="a-name">Farm Walks</div><div class="a-desc">Guided walks through paddy fields, orchards and vegetable patches.</div></div>
     <div class="amenity-card"><div class="a-icon">🔥</div><div class="a-name">Barbeque Night</div><div class="a-desc">Evening barbeque under open skies — smoky, social and unforgettable.</div></div>
@@ -642,8 +679,24 @@ footer { background: var(--black); padding: 4rem 6vw 2rem; }
       <h2 class="sec-title">Plan Your<br><em>Stay</em></h2>
       <p style="margin-top:1rem">Weekends fill up fast — especially October through March. Book at least 2 weeks ahead. Minimum 1 night; 2 nights recommended.</p>
       <div class="info-list">
-        <div class="info-row"><div class="i-icon">💰</div><div><div class="i-title">Pricing</div><div class="i-text">&#8377;3,500 per person per night including all meals. Group rates for 10+ guests.</div></div></div>
-        <div class="info-row"><div class="i-icon">👨‍👩‍👧</div><div><div class="i-title">Capacity</div><div class="i-text">Max 20 guests. Multiple cottages from cozy doubles to family rooms.</div></div></div>
+        <div class="info-row">
+  <div class="i-icon">💰</div>
+  <div>
+    <div class="i-title">Pricing</div>
+    <div class="i-text">
+      &#8377;8,000 per night for up to 6 guests. Extra guests: &#8377;1,000 per person.
+    </div>
+  </div>
+</div>
+        <div class="info-row">
+  <div class="i-icon">🏡</div>
+  <div>
+    <div class="i-title">Entire Facility</div>
+    <div class="i-text">
+      Exclusive access to the full property. Spacious hall suitable for 10 to 20 daytime guests, along with two bedrooms — one air-conditioned room and one room with air cooler.
+    </div>
+  </div>
+</div>
         <div class="info-row"><div class="i-icon">💬</div><div><div class="i-title">WhatsApp Confirmation</div><div class="i-text">We confirm your booking on WhatsApp within 4 hours.</div></div></div>
       </div>
       <ul class="policies">
@@ -676,12 +729,9 @@ footer { background: var(--black); padding: 4rem 6vw 2rem; }
           </select>
         </div>
       </div>
-      <div class="f-group"><label>Room Preference</label>
+      <div class="f-group"><label>Preference</label>
         <select id="rm">
-          <option value="double">Double Cottage (2 guests)</option>
-          <option value="family">Family Cottage (4 guests)</option>
-          <option value="dorm">Dormitory Bed (solo/budget)</option>
-          <option value="entire">Entire Farm (private buyout)</option>
+           <option value="entire">Entire Farm House)</option>
         </select>
       </div>
       <div class="f-group"><label>Full Name</label><input type="text" id="nm" placeholder="Ravi Kumar"></div>
@@ -722,7 +772,7 @@ footer { background: var(--black); padding: 4rem 6vw 2rem; }
   </div>
   <div class="loc-grid">
     <div class="map-wrap reveal">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60930.88!2d77.6!3d17.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbb8e0c1234567%3A0xabcdef!2sChevella%2C%20Telangana!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.924170330742!2d78.09000407516227!3d17.27090318359651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbddc4d206c53f%3A0xa8e9bb6514c72e90!2sPollam%20Gattu%20Stay!5e0!3m2!1sen!2sin!4v1779077371881!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Pollamgattu map"></iframe>
     </div>
     <div class="reveal d2">
@@ -766,8 +816,7 @@ footer { background: var(--black); padding: 4rem 6vw 2rem; }
       <li><a href="#booking">Weekend Getaway</a></li>
       <li><a href="#booking">Corporate Retreat</a></li>
       <li><a href="#booking">Family Stay</a></li>
-      <li><a href="#booking">Private Farm Buyout</a></li>
-      <li><a href="#booking">School / College Trips</a></li>
+      <li><a href="#booking">Special Events</a></li>
     </ul></div>
     <div class="f-col"><h5>Contact</h5><ul>
       <li><a href="tel:+919177000010">+91 91770 00010</a></li>
